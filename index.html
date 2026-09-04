@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abdelrahman Aboud's cybersecurity and penetration testing portfolio.">
+  <title>Abdelrahman Aboud | Security Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/security.css">
+</head>
+<body>
+  <div class="scanline" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Back to top"><span class="brand-mark">//</span> A.3BOUD</a>
+    <nav class="desktop-nav" aria-label="Primary navigation">
+      <a href="#methodology">Methodology</a>
+      <a href="#labs">Labs</a>
+      <a href="#toolkit">Toolkit</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-status" href="#contact"><span class="status-dot"></span> Open to opportunities</a>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-line"></span> SECURITY OPERATIONS / 001</p>
+        <p class="boot-line" aria-hidden="true">[BOOT] secure shell online · integrity verified · sandbox ready</p>
+        <h1 class="cipher-title" data-cipher-target="Finding the|weak point|before it matters.">Finding the<br><em>weak point</em><br>before it matters.</h1>
+        <p class="hero-description">Junior Penetration Tester combining software engineering fundamentals with hands-on security training to understand how applications fail and how they can be hardened.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#labs">Explore security work <span>↗</span></a>
+          <a class="button button-ghost" href="./assets/CV.pdf" download>Download CV <span>↓</span></a>
+        </div>
+        <div class="hero-meta">
+          <div><span>FOCUS</span><strong>Web Application Security</strong></div>
+          <div><span>ENVIRONMENT</span><strong>Legal labs only</strong></div>
+          <div><span>STATUS</span><strong class="live-text">Learning in progress</strong></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal reveal-delay" aria-label="Interactive security network visualization">
+        <canvas id="security-canvas" aria-hidden="true"></canvas>
+        <div class="visual-label label-top">LIVE ATTACK SURFACE <span>●</span></div>
+        <div class="network-readout">
+          <span>THREAT MODEL</span>
+          <strong>CONTROLLED</strong>
+          <small>NO LIVE TARGETS</small>
+        </div>
+        <div class="visual-label label-bottom">DRAG / HOVER NODES</div>
+        <div class="radar-caption"><span class="radar-sweep-dot"></span> THREAT RADAR / ACTIVE</div>
+      </div>
+    </section>
+
+    <section class="signal-strip shell reveal" aria-label="Current profile status">
+      <div><span class="signal-key">01</span><strong>Software Engineer</strong><small>FOUNDATION</small></div>
+      <div><span class="signal-key">02</span><strong>DEPI Trainee</strong><small>PENETRATION TESTING / IN PROGRESS</small></div>
+      <div><span class="signal-key">03</span><strong>Security Researcher</strong><small>BUILDING HANDS-ON EVIDENCE</small></div>
+    </section>
+
+    <section class="section shell" id="methodology">
+      <div class="section-heading reveal"><p class="eyebrow">/ 01 — METHODOLOGY</p><h2>A repeatable path from<br><em>signal to remediation.</em></h2></div>
+      <div class="method-grid">
+        <article class="method-card reveal"><span>01</span><h3>Reconnaissance</h3><p>Map the authorized scope, surface, technologies, and entry points.</p><code>Nmap · Amass · OSINT</code></article>
+        <article class="method-card reveal reveal-delay"><span>02</span><h3>Enumeration</h3><p>Identify services, endpoints, roles, and behavior worth testing.</p><code>ffuf · Gobuster · DevTools</code></article>
+        <article class="method-card reveal"><span>03</span><h3>Analysis</h3><p>Validate hypotheses and prioritize findings by impact and likelihood.</p><code>Burp Suite · ZAP · CVSS</code></article>
+        <article class="method-card reveal reveal-delay"><span>04</span><h3>Reporting</h3><p>Turn technical evidence into clear risk and practical remediation.</p><code>Evidence · Impact · Fix</code></article>
+      </div>
+    </section>
+
+    <section class="section shell" id="simulation">
+      <div class="simulation-heading reveal">
+        <div><p class="eyebrow">/ 02 — OPERATOR PROFILE / LIVE</p><h2>The operator<br>behind the <em>signal.</em></h2></div>
+        <div class="simulation-context"><span class="context-mark">◈</span><p>Personal telemetry feed<br><strong>ABOUD / SECURITY TRACK</strong></p></div>
+      </div>
+      <div class="sim-telemetry reveal" aria-label="Personal security profile telemetry"><span><b>IDENTITY</b> ABDELRAHMAN ABOUD</span><span><b>TRACK</b> PENETRATION TESTING</span><span><b>PROOF</b> 7 CONTROLLED LABS</span><span class="telemetry-live"><i></i> PROFILE LIVE</span></div>
+      <div class="simulation-layout reveal">
+        <div class="sim-terminal">
+          <div class="sim-terminal-bar"><span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-title">profile@aboud-sec:~</span><span class="sim-status"><span class="status-dot"></span> VERIFIED INPUT</span></div>
+          <div class="sim-terminal-body" id="sim-output" aria-live="polite"><span class="sim-prompt">$</span> profile --stream</div>
+          <button class="button button-primary sim-next" id="sim-next" type="button">Cycle profile signal <span>→</span></button>
+        </div>
+        <div class="server-panel">
+          <div class="server-panel-head"><span>PROFILE LOGS</span><strong id="server-state">ONLINE</strong></div>
+          <div class="server-logs" id="server-logs"><p><span>00:00:00</span> software engineering foundation indexed</p><p><span>00:00:01</span> DEPI penetration testing track detected</p><p><span>00:00:02</span> security learning state: in progress</p></div>
+          <div class="cvss-readout"><span>LABS / COMPLETED</span><strong id="cvss-score">7</strong><small id="sim-stage">CONTROLLED ROOMS</small></div>
+        </div>
+        <div class="attack-stepper" aria-label="Personal security profile signals">
+          <p>PROFILE SIGNALS</p>
+          <div class="step active" data-step="0"><i></i><span>Foundation</span></div><div class="step" data-step="1"><i></i><span>DEPI</span></div><div class="step" data-step="2"><i></i><span>Labs</span></div><div class="step" data-step="3"><i></i><span>Focus</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="labs">
+      <div class="section-heading split-heading reveal"><div><p class="eyebrow">/ 03 — CONTROLLED LABS</p><h2>Evidence of<br><em>practice.</em></h2></div><p class="heading-note">No invented engagements.<br>Only legal, reproducible environments.</p></div>
+      <div class="lab-grid completed-labs">
+        <article class="lab-card lab-feature reveal"><div class="lab-top"><span class="lab-index">ROOM / 01</span><span class="lab-badge complete-badge">COMPLETED</span></div><div><p class="lab-type">LINUX / WEB</p><h3>Blue</h3><p>Completed a controlled Windows and service enumeration lab focused on identifying exposed services and understanding attack paths.</p></div><div class="lab-footer"><span>TryHackMe</span><span>Completed ✓</span></div></article>
+        <article class="lab-card reveal reveal-delay"><div class="lab-top"><span class="lab-index">ROOM / 02</span><span class="lab-badge complete-badge">COMPLETED</span></div><p class="lab-type">WEB APPLICATION</p><h3>Relevant</h3><p>Practiced web enumeration, file transfer attack paths, and post-exploitation fundamentals in an isolated environment.</p><div class="lab-footer"><span>TryHackMe</span><span>Completed ✓</span></div></article>
+        <article class="lab-card reveal"><div class="lab-top"><span class="lab-index">ROOM / 03</span><span class="lab-badge complete-badge">COMPLETED</span></div><p class="lab-type">WEB / ENUMERATION</p><h3>Bounty Hacker</h3><p>Worked through reconnaissance, service enumeration, and controlled exploitation methodology.</p><div class="lab-footer"><span>TryHackMe</span><span>Completed ✓</span></div></article>
+        <article class="lab-card reveal reveal-delay"><div class="lab-top"><span class="lab-index">ROOM / 04</span><span class="lab-badge complete-badge">COMPLETED</span></div><p class="lab-type">LINUX / NETWORK</p><h3>Kenobi</h3><p>Practiced SMB enumeration, service discovery, and Linux privilege escalation in a legal lab.</p><div class="lab-footer"><span>TryHackMe</span><span>Completed ✓</span></div></article>
+        <article class="lab-card reveal"><div class="lab-top"><span class="lab-index">ROOM / 05</span><span class="lab-badge complete-badge">COMPLETED</span></div><p class="lab-type">WINDOWS / WEB</p><h3>Steel Mountain</h3><p>Explored Windows service exploitation and privilege escalation through a controlled machine.</p><div class="lab-footer"><span>TryHackMe</span><span>Completed ✓</span></div></article>
+        <article class="lab-card reveal reveal-delay"><div class="lab-top"><span class="lab-index">TRACK / 06</span><span class="lab-badge complete-badge">COMPLETED</span></div><p class="lab-type">LINUX PRIVILEGE ESCALATION</p><h3>Linux PrivEsc</h3><p>Completed guided practice across Linux enumeration, misconfigurations, and escalation paths.</p><div class="lab-footer"><span>TryHackMe</span><span>Completed ✓</span></div></article>
+        <article class="lab-card reveal"><div class="lab-top"><span class="lab-index">TRACK / 07</span><span class="lab-badge complete-badge">COMPLETED</span></div><p class="lab-type">WINDOWS PRIVILEGE ESCALATION</p><h3>Windows PrivEsc</h3><p>Practiced Windows enumeration, service weaknesses, and controlled privilege escalation techniques.</p><div class="lab-footer"><span>TryHackMe</span><span>Completed ✓</span></div></article>
+      </div>
+    </section>
+
+    <section class="section shell dark-section" id="toolkit">
+      <div class="section-heading reveal"><p class="eyebrow">/ 04 — TOOLKIT</p><h2>Tools with a<br><em>reason.</em></h2></div>
+      <div class="toolkit-grid reveal">
+        <div><span>RECONNAISSANCE</span><strong>Nmap</strong><strong>Amass</strong><strong>Gobuster</strong><strong>ffuf</strong></div>
+        <div><span>WEB SECURITY</span><strong>Burp Suite</strong><strong>SQL Injection</strong><strong>Cross-Site Scripting (XSS)</strong><strong>Broken Access Control</strong></div>
+        <div><span>NETWORK / SYSTEMS</span><strong>Wireshark</strong><strong>Network Enumeration</strong><strong>Linux / Kali</strong><strong>Windows Server</strong></div>
+        <div><span>AUTOMATION / FOUNDATIONS</span><strong>Python</strong><strong>Bash scripting</strong><strong>Secure Code Review</strong><strong>Privilege Escalation</strong></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="learning">
+      <div class="section-heading split-heading reveal"><div><p class="eyebrow">/ 05 — LEARNING PATH</p><h2>Always<br><em>in progress.</em></h2></div><p class="heading-note">Currently enrolled in the Digital Egypt Pioneers Initiative (DEPI), specializing in Penetration Testing.</p></div>
+      <div class="roadmap reveal">
+        <div class="road-step done"><span>01</span><strong>Linux & Networking</strong><small>Foundation</small></div><div class="road-line"></div><div class="road-step active"><span>02</span><strong>Web & API Security</strong><small>Practicing now</small></div><div class="road-line"></div><div class="road-step"><span>03</span><strong>Privilege Escalation</strong><small>Next focus</small></div><div class="road-line"></div><div class="road-step"><span>04</span><strong>Reporting & Assessment</strong><small>Building evidence</small></div>
+      </div>
+      <div class="platforms"><span>TryHackMe / PRACTICING</span><span>PortSwigger Academy / PRACTICING</span><span>Hack The Box / PLANNED</span></div>
+    </section>
+
+    <section class="contact-section shell reveal" id="contact">
+      <div><p class="eyebrow">/ 06 — SECURE INTAKE</p><h2>Let’s make<br>systems <em>harder to break.</em></h2><p class="contact-note">Have an application, lab, or security question worth investigating? Start a controlled conversation.</p></div>
+      <div class="contact-side"><div class="secure-terminal"><div><span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-title">secure_channel.sh</span></div><p><span class="terminal-prompt">$</span> whoami</p><strong>abdelrahmanaboud21@gmail.com</strong><p><span class="terminal-prompt">$</span> status --availability</p><strong class="terminal-ready">READY_FOR_OPPORTUNITIES</strong><p><span class="terminal-prompt">$</span> connect --scope ethical</p><strong>CHANNEL_ENCRYPTED <span>✓</span></strong></div><a class="button button-primary" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=abdelrahmanaboud21@gmail.com" target="_blank" rel="noopener">Start a conversation <span>↗</span></a><div class="contact-links"><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=abdelrahmanaboud21@gmail.com" target="_blank" rel="noopener">Email</a><a href="https://github.com/AbdelrahmanAboud" target="_blank" rel="noopener">GitHub</a><a href="https://www.linkedin.com/in/abdelrahman-aboud-8b2212300/" target="_blank" rel="noopener">LinkedIn</a></div></div>
+    </section>
+  </main>
+
+  <footer class="shell"><span>A.3BOUD / 2026</span><span>LEGAL LABS ONLY / BUILT WITH CURIOSITY</span></footer>
+  <script src="./js/security.js"></script>
+</body>
+</html>
